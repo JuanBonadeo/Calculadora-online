@@ -1,0 +1,632 @@
+@charset "UTF-8";
+body {
+  z-index: 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins; }
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  padding: -20px 0; }
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 500; }
+
+h3 {
+  font-size: .75em;
+  font-weight: 500; }
+
+h4 {
+  font-size: .60em;
+  font-weight: 400; }
+
+h5 {
+  font-size: .25em; }
+
+p {
+  font-size: .9em;
+  font-weight: 300; }
+
+@media (min-width: 720px) {
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    padding: -20px 0; }
+  h3 {
+    font-size: .75em;
+    font-weight: 500; }
+  h4 {
+    font-size: .60em;
+    font-weight: 400; }
+  h5 {
+    font-size: .25em; }
+  p {
+    font-size: 1.3em;
+    font-weight: 300; } }
+
+.myButton {
+  background: linear-gradient(to bottom, #f7e14f 5%, #ffab23 100%);
+  background-color: #f7e14f;
+  border-radius: 42px;
+  border: 3px solid #ffaa22;
+  display: inline-block;
+  cursor: pointer;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 21px;
+  text-decoration: none; }
+  .myButton:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #f7e14f 100%);
+    background-color: #ffab23;
+    color: #777676; }
+
+.pagination {
+  background: #000;
+  color: #ffb13c; }
+  .pagination .page-link {
+    color: #000000;
+    background-color: #D7D7D7; }
+  .pagination .page-link:hover {
+    border-radius: 0px;
+    background-color: #ececec;
+    color: #ffaa22; }
+
+.page-link1, .page-link2, .page-link3 {
+  background-color: #333333;
+  color: #D7D7D7; }
+  .page-link1, .page-link2, .page-link3 {
+    background-color: #333333;
+    color: #D7D7D7; }
+
+header {
+  position: fixed;
+  z-index: 10;
+  margin-top: -6px;
+  width: 100vw; }
+  header nav {
+    display: flex;
+    background: black;
+    height: 80px;
+    align-items: center;
+    font-weight: 500;
+    justify-items: center;
+    align-content: space-between; }
+    header nav a {
+      text-decoration: none;
+      color: #FFB13C; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      font-weight: 300;
+      padding-top: 1em; }
+    header nav .home {
+      padding-left: 1em;
+      margin-right: -1.3em; }
+    header nav li {
+      font-size: 12px;
+      background-color: black;
+      text-align: center;
+      padding-right: .3em;
+      color: #FFB13C;
+      list-style: none; }
+    header nav div a {
+      font-size: .9em; }
+      header nav div a:hover {
+        color: #d28303; }
+    header nav li a:hover {
+      transition-duration: .4s;
+      background: #FFB13C;
+      color: #333333;
+      border-radius: 3px; }
+
+@media (min-width: 720px) {
+  nav {
+    width: 100vw;
+    font-weight: 500;
+    justify-content: space-between;
+    padding-bottom: .5em; }
+    nav .home {
+      padding-right: 0px; }
+    nav li {
+      padding: 0 1em; }
+    nav div {
+      font-size: 1.9em;
+      padding-right: 1em; }
+    nav a {
+      font-size: 1.7em; }
+  ul {
+    padding-right: 1.3em; } }
+
+footer {
+  background: #000000;
+  height: auto;
+  padding-bottom: 1px;
+  border-top: 1px solid #dee2e6; }
+  footer iframe {
+    border: 2px double #FFB13C; }
+
+.links-desktop-footer {
+  display: flex;
+  align-self: flex-end; }
+
+.icons-footer {
+  height: 900px; }
+
+.footer-container {
+  background-color: black;
+  color: #D7D7D7; }
+
+.footer1 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 70px;
+  justify-content: center;
+  border-top: 1px solid #dee2e6; }
+
+.cards-footer {
+  padding: 0 20px; }
+
+@media (min-width: 1400px) {
+  .mostwanted {
+    flex-direction: row;
+    gap: 15px; } }
+
+.titulo {
+  width: min-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 500px;
+  color: #D7D7D7;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.442), rgba(0, 0, 0, 0.19)), url("/images/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #000; }
+
+.carouselExampleCaptions {
+  z-index: 0;
+  color: #D7D7D7; }
+
+.carousel-item {
+  height: 700px;
+  position: relative; }
+
+.carousel-caption h5 {
+  font-size: 2.5em; }
+
+.carousel-1 {
+  background-image: url("../IMAGES/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.carousel-2 {
+  background-image: url("../IMAGES/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.carousel-3 {
+  background-image: url("../IMAGES/mustang.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+#nuestros-modelos {
+  display: flex;
+  align-items: center;
+  background: black;
+  color: #D7D7D7;
+  height: 800px;
+  flex-direction: column;
+  padding-top: 1em; }
+  #nuestros-modelos .cards-modelos {
+    color: #D7D7D7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+
+@media (min-width: 720px) {
+  .carousel-3 {
+    background-image: url("../IMAGES/herobanner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .carousel-2 {
+    background-image: url("../IMAGES/Aston'Martin.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  .carousel-1 {
+    background-image: url("../IMAGES/corvete.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+  #nuestros-modelos {
+    padding-top: 150px; }
+  .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 60px 0px;
+    justify-content: space-between;
+    width: 80%; }
+  .cards-modelos {
+    font-size: larger;
+    height: 300px;
+    width: 385px;
+    padding-top: 40px; }
+    .cards-modelos .laferrari {
+      background-image: url("../../images/laferrari.jpg"); } }
+
+.nav-contacto {
+  margin-bottom: -100px; }
+
+#hero-container {
+  display: flex; }
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 40px; }
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 97% 0%; }
+  50% {
+    background-position: 4% 100%; }
+  100% {
+    background-position: 97% 0%; } }
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 97% 0%; }
+  50% {
+    background-position: 4% 100%; }
+  100% {
+    background-position: 97% 0%; } }
+
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 97% 0%; }
+  50% {
+    background-position: 4% 100%; }
+  100% {
+    background-position: 97% 0%; } }
+
+@keyframes AnimationName {
+  0% {
+    background-position: 97% 0%; }
+  50% {
+    background-position: 4% 100%; }
+  100% {
+    background-position: 97% 0%; } }
+
+div input {
+  margin: 16px 0;
+  width: 320px;
+  border-radius: 5px; }
+
+.map-container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 100px; }
+
+#hero-contactanos {
+  background: linear-gradient(343deg, #ffcd00, #ff0000, #ffc100, #ffc100, #ff0000);
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 8s ease infinite;
+  -moz-animation: AnimationName 8s ease infinite;
+  -o-animation: AnimationName 8s ease infinite;
+  animation: AnimationName 8s ease infinite; }
+
+.titulo-modelos {
+  color: #D7D7D7;
+  background-color: #FFB13C;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../IMAGES/koiniseg (2).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .titulo-modelos h3 {
+    margin-top: 5px;
+    font-size: medium;
+    color: #000000; }
+
+#llegaron-modelos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  padding-bottom: 40px;
+  color: #D7D7D7;
+  padding-top: 100px; }
+  #llegaron-modelos h2 {
+    padding-bottom: 60px; }
+  #llegaron-modelos .cards-modelos {
+    color: #D7D7D7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; }
+
+@media (min-width: 720px) {
+  #llegaron-modelos .container-llegaron {
+    width: 90%;
+    align-content: flex-end;
+    justify-content: space-evenly; }
+  div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    div cards-modelos {
+      padding: 40px 50px;
+      width: 100%; } }
+
+#hero .titulo {
+  width: 100%; }
+  #hero .titulo p {
+    text-align: left;
+    color: #000; }
+  #hero .titulo h3 {
+    color: #000; }
+
+#hero .titulo p {
+  text-align: right; }
+
+.hero-acerca h3 {
+  font-size: 1.1em; }
+
+.hero-acerca0 {
+  background-image: none;
+  height: 1400px;
+  background-image: url("../IMAGES/herobannerdesktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white; }
+
+.hero-acerca h1 {
+  padding-bottom: -40px; }
+
+.hero-acerca {
+  height: 1400px;
+  background-attachment: fixed; }
+
+.acerca1 {
+  background: #000;
+  text-align: end;
+  padding-left: 190px;
+  background-attachment: fixed;
+  background-image: url("../IMAGES/fangio.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.acerca {
+  color: #000; }
+
+.acerca2 {
+  background: #FFB13C;
+  text-align: left;
+  padding-right: 190px;
+  padding-left: 10px;
+  background-attachment: fixed;
+  background-image: url("../IMAGES/vieja.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.acerca3 {
+  background: #000;
+  text-align: end;
+  padding-left: 190px;
+  background-attachment: fixed;
+  background-image: url("../images/Chevrolet_Corvette.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+@media (min-width: 1138px) {
+  .hero-acerca h3 {
+    font-size: 1.6em; }
+  .hero-acerca0 {
+    background-image: url("../IMAGES/nissangtr.jpg");
+    height: 1200px; }
+  .hero-acerca h1 {
+    padding-bottom: -40px; }
+  .hero-acerca {
+    height: 1200px;
+    color: #000; }
+  .acerca1 {
+    padding-left: 890px;
+    padding-top: -100px; }
+  .acerca2 {
+    padding-right: 890px; }
+  .acerca3 {
+    padding-left: 890px; }
+  .footer-container acerca {
+    color: #D7D7D7; } }
+
+.titulo-servicios {
+  background-image: url("../images/colorada.jpg");
+  background-color: #00000020;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 900px;
+  color: #000; }
+
+#servicios-cards {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-items: center;
+  padding: 90px 0px; }
+  #servicios-cards .servicios-cards {
+    height: 460px;
+    width: 320px;
+    border-radius: 10px;
+    padding-bottom: 10px; }
+    #servicios-cards .servicios-cards .img-servicios {
+      height: 300px;
+      width: 320px;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; }
+
+@media (min-width: 720px) {
+  .titulo-servicios h3 {
+    padding-top: 40px; }
+  .titulo-servicios {
+    height: 790px;
+    color: #000; }
+  #servicios-cards .servicios-cards {
+    height: 560px;
+    width: 320px;
+    border-radius: 10px;
+    padding-bottom: 50px; }
+    #servicios-cards .servicios-cards .img-servicios {
+      height: 300px;
+      width: 320px;
+      border-radius: 10px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center; } }
+
+.laferrari {
+  background-image: url("../IMAGES/laferrari.jpg"); }
+
+.spider {
+  background-image: url("../IMAGES/spider.jpg"); }
+
+.veiron {
+  background-image: url("../IMAGES/Bugatti.jpg"); }
+
+.bmw {
+  background-image: url("../IMAGES/bmwM8.jpg"); }
+
+.corvete {
+  background-image: url("../IMAGES/corvette.jpg"); }
+
+.mustang {
+  background-image: url("../IMAGES/Auto Addict 🏎️ on Twitter.jpg"); }
+
+.jaguar {
+  background-image: url("../IMAGES/jaguardo.jpg"); }
+
+.aston-martin {
+  background-image: url("../IMAGES/Aston'Martin.jpg"); }
+
+.audi {
+  background-image: url("../IMAGES/audir8.jpg"); }
+
+.mini {
+  background-image: url("../IMAGES/minicooper.jpg"); }
+
+.bentley {
+  background-image: url("../images/bentley.jpg"); }
+
+.roll {
+  background-image: url("../images/rollroyce.jpg"); }
+
+.land {
+  background-image: url("../images/land.jpg"); }
+
+.gtr {
+  background-image: url("../images/nissangtr.jpg"); }
+
+.nsx {
+  background-image: url("../IMAGES/hondansx.jpg"); }
+
+.bmw-3300 {
+  background-image: url("../images/bmw3300.jpg"); }
+
+.alfa {
+  background-image: url("../images/alfa.jpg"); }
+
+.tesla {
+  background-image: url("../images/tesla.jpg"); }
+
+.challenger {
+  background-image: url("../IMAGES/challenger.jpg"); }
+
+.veloster {
+  background-image: url("../IMAGES/veloster.jpg"); }
+
+.fordgt {
+  background-image: url("../IMAGES/fordgt.jpg"); }
+
+.jeep {
+  background-image: url("../IMAGES/jeep.jpg"); }
+
+.sw4 {
+  background-image: url("../IMAGES/sw4.jpg"); }
+
+.bronco {
+  background-image: url("../IMAGES/bronco.jpg"); }
+
+.scirocco {
+  background-image: url("../IMAGES/scirocco.jpg"); }
+
+.mercedes-amg {
+  background-image: url("../IMAGES/mercedes-amg.jpg"); }
+
+.volvo {
+  background-image: url("../IMAGES/Volvopolestar.jpg"); }
+
+.img-garantias {
+  background-image: url("../IMAGES/garantias.jpg"); }
+
+.img-consultas {
+  background-image: url("../IMAGES/recall.jpg"); }
+
+.img-mantenimiento {
+  background-image: url("../IMAGES/planmantenimiento.jpg"); }
+
+.img-asistencia {
+  background-image: url("../IMAGES/asesoria.jpg"); }
+
+.img-accesorios {
+  background-image: url("../IMAGES/accesorios.jpg"); }
+
+.img-cuenta {
+  background-image: url("../IMAGES/mi'cuenta.jpg"); }
